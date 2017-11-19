@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     display: inline-block;
-    font-family: 'Droid Sans', Arial, serif;
 }
 
 .page-header {
@@ -18,8 +17,10 @@ body {
     display: inline-block;
     vertical-align: top;
     padding-bottom: 20px;
+    font-family: Lobster, cursive;
 }
 
 .site-name {
     padding: 20px 0px 5px 20px;
 }
+
