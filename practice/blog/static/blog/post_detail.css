@@ -1,27 +1,3 @@
-﻿/** {
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
-}*/
-
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
-.page-header {
-    width: 100%;
-    background-color: orange;
-    vertical-align: top;
-    display: inline-block;
-}
-
-.page-content {
+﻿.post-content {
     padding: 20px;
-}
-
-.site-name {
-    padding: 20px 0px 20px 20px;
 }

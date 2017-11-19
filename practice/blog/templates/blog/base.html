@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    {% block title %}{% endblock %}
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'blog/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/post_detail.css' %}" />
+    {% endblock %}
+</head>
+<body>
+    <div class="page-header">
+        <h1 class="site-name">My Blog</h1>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿/** {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}*/
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-family: 'Droid Sans', Arial, serif;
+}
+
+.page-header {
+    width: 100%;
+    background-color: orange;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
+.site-name {
+    padding: 20px 0px 5px 20px;
+}
