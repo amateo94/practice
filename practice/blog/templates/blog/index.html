@@ -1,0 +1,33 @@
+﻿{% extends "blog/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    <title>Blog Index</title>
+{% endblock %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post-info">
+            <br />
+            <a href="{% url 'post_detail' pk=post.pk %}"><h2>{{ post.title }}</h2></a>
+            <br />
+            <h4>By {{ post.author }}</h4>
+            <br />
+        </div>
+    {% endfor %}
+    
+    <div class="page-btn-box">
+        <form>
+            {% if currentPage > 0 %}
+                <button formaction="{% url 'index' pageNumber=prevPage %}">
+                    Previous page
+                </button>
+            {% endif %}
+            <button formaction="{% url 'index' pageNumber=nextPage %}">
+                Next page
+            </button>
+        </form>
+    </div>
+
+{% endblock %}
+
